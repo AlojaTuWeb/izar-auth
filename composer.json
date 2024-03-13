@@ -1,0 +1,38 @@
+{
+    "name": "alojatuweb/izar-auth",
+    "description": "Authentication system for Laravel 11. This package is part of Izar-CMS.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Iván López Ordorica",
+            "email": "webmasterbrak@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alojatuweb\\IzarAuth\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alojatuweb\\IzarAuth\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "dev-main",
+        "orchestra/testbench": "9.x-dev",
+        "phpunit/phpunit": "11.0.x-dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Alojatuweb\\IzarAuth\\IzarAuthServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
